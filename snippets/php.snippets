@@ -5,9 +5,9 @@ snippet php
 snippet ec
 	echo "${1:string}"${2};
 snippet inc
-	require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/${1}.php');
-snippet data
-	require_once($_SERVER['DOCUMENT_ROOT'] . '/data/${1}.php');
+	require_once(TT_ROOT . '/includes/${1}.php');
+snippet model
+	require_once(TT_ROOT . '/includes/models/${1}.php');
 # $GLOBALS['...']
 snippet globals
 	$GLOBALS['${1:variable}']${2: = }${3:something}${4:;}${5}

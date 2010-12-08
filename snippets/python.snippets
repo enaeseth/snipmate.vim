@@ -1,9 +1,16 @@
 snippet #!
 	#!/usr/bin/env python
 
+snippet enc
+	# encoding: utf-8
 snippet imp
 	import ${1:module}
 # Module Docstring
+snippet ds
+	"""
+	$1
+	"""
+	$0
 snippet docs
 	'''
 	File: ${1:`Filename('$1.py', 'foo.py')`}
